@@ -1,0 +1,60 @@
+.hero {
+  min-height: 100vh;
+  padding-top: 90px;   /* ADD THIS */
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.25), transparent 60%), #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+}
+
+.title span {
+  color: #38bdf8;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.buttons a {
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #020617;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+}
