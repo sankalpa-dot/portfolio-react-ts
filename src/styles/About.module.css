@@ -1,0 +1,28 @@
+.about {
+  padding: 6rem 6%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 2.4rem;
+  color: #38bdf8;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about p {
+  color: #e5e7eb;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+.about strong {
+  color: #38bdf8;
+}
+.about ul {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
