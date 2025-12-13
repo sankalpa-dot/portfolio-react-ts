@@ -1,12 +1,10 @@
 const About = () => {
   return (
-    <section id="about" style={{ background: "#020617" }}>
+    <section id="about">
       <h2>About Me</h2>
       <p>
-        I am an M.Sc. Computer Science student with a strong interest in
-        Computer Networks, IoT, and Web Development. My long-term goal is to
-        become a Computer Science professor and contribute to teaching and
-        research.
+        I am an M.Sc. Computer Science student with an interest in
+        Computer Networks, IoT, and Web Development.
       </p>
     </section>
   );
