@@ -1,0 +1,58 @@
+.skills {
+  padding: 6rem 6%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  color: #38bdf8;
+  margin-bottom: 3.5rem;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 2.2rem;
+  justify-items: center;
+}
+
+/* CARD */
+.card {
+  width: 140px;
+  height: 140px;
+  background: #2b2f5b;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.08),
+    0 12px 30px rgba(0,0,0,0.45);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 0 0 1px rgba(56,189,248,0.6),
+    0 16px 35px rgba(56,189,248,0.35);
+}
+
+/* ICON */
+.card i {
+  font-size: 44px;
+  color: #e5e7eb;
+}
+
+/* TEXT */
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  font-weight: 500;
+}

@@ -1,0 +1,69 @@
+.projects {
+  padding: 5rem 6%;
+}
+
+.projects h2 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  color: #38bdf8;
+  text-align: center;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Project card */
+.card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.8rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.25);
+}
+
+.card h3 {
+  margin-bottom: 0.8rem;
+  color: #e5e7eb;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #cbd5f5;
+  line-height: 1.5;
+}
+
+/* Tech tags */
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech span {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+/* Link */
+.card a {
+  text-decoration: none;
+  color: #38bdf8;
+  font-weight: 500;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
