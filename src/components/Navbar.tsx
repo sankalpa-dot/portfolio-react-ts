@@ -11,12 +11,14 @@ const Navbar = () => {
 
         {/* LOGO */}
         <div className={styles.logo}>
-          <img src={logo} alt="Logo" />
+          <a href="#home" onClick={() => setOpen(false)}>
+            <img src={logo} alt="Sankalpa Logo" />
+          </a>
         </div>
 
         {/* HAMBURGER */}
         <div
-          className={styles.hamburger}
+          className={`${styles.hamburger} ${open ? styles.active : ""}`}
           onClick={() => setOpen(!open)}
         >
           <span></span>

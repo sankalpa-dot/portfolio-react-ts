@@ -17,12 +17,20 @@
   align-items: center;
 }
 
+/* 🔥 BIG LOGO (ONLY ONE DEFINITION) */
 .logo {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
+.logo img {
+  width: 72px;        /* 👈 BIGGER LOGO */
+  height: 72px;
+  object-fit: contain;
+}
+
+/* NAV LINKS */
 .links {
   list-style: none;
   display: flex;
@@ -30,6 +38,7 @@
 }
 
 .links a {
+  position: relative;
   text-decoration: none;
   color: #e5e7eb;
   font-weight: 500;
@@ -38,81 +47,6 @@
 
 .links a:hover {
   color: #38bdf8;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #38bdf8;
-}
-
-.logo img {
-  width: 55px;
-  height: 55px;
-  object-fit: contain;
-}
-
-/* Logo container */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #38bdf8;
-  cursor: pointer;
-}
-
-/* Logo image */
-.logo img {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-}
-/* Hamburger icon */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger span {
-  width: 26px;
-  height: 3px;
-  background: #38bdf8;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: rgba(2, 6, 23, 0.95);
-    flex-direction: column;
-    width: 220px;
-    padding: 1.5rem;
-    gap: 1.2rem;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    border-left: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .show {
-    transform: translateX(0);
-  }
-}
-.links a {
-  position: relative;
 }
 
 .links a::after {
@@ -128,4 +62,50 @@
 
 .links a:hover::after {
   width: 100%;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #38bdf8;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .logo img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: rgba(2, 6, 23, 0.95);
+    flex-direction: column;
+    width: 220px;
+    padding: 1.5rem;
+    gap: 1.2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .show {
+    transform: translateX(0);
+  }
 }
