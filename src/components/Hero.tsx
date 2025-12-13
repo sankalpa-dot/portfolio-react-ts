@@ -37,7 +37,7 @@ const Hero = () => {
 
         <div className={styles.buttons}>
           <a href="#projects">View Projects</a>
-          <a href="/resume.pdf" download className={styles.outline}>
+          <a href="src/assets/Resume Sankalpa.pdf" download className={styles.outline}>
             Download Resume
           </a>
         </div>
