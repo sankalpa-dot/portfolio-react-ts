@@ -4,7 +4,7 @@ import profile from "../assets/profile.jpeg";
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section id="home" className={styles.hero}>
       <div className={styles.content}>
 
         {/* PROFILE IMAGE */}
