@@ -1,6 +1,6 @@
 .hero {
   min-height: 100vh;
-  padding-top: 90px;   /* ADD THIS */
+  padding-top: 90px;/* ADD THIS */
   background: radial-gradient(circle at top, rgba(56, 189, 248, 0.25), transparent 60%), #020617;
   display: flex;
   align-items: center;
